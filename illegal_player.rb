@@ -5,8 +5,6 @@ class IllegalPlayer < Player
   attr_accessor :color, :opponent, :player_name
 
   def initialize(player_name = 'Shady')
-    @color = 'navy'
-    @opponent = nil
     @player_name = player_name
   end
 
@@ -14,5 +12,4 @@ class IllegalPlayer < Player
   def play_round(heaps)
     [-1, -1]
   end
-
 end
