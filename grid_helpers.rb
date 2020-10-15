@@ -55,7 +55,7 @@ module GridHelpers
   end
 
   def mold_column_amount_for_bad_info(column, amount)
-    if column < 0
+    if column < 0 || column > 6
       raise_illegal_move
       first_available_move
     elsif @heaps[column] == 0
@@ -65,7 +65,6 @@ module GridHelpers
       raise_illegal_move
       [column, @heaps[column]]
     elsif amount <= 0
-      puts 'third condition'
       raise_illegal_move
       [column, 1]
     else
