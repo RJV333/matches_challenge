@@ -55,6 +55,9 @@ module GridHelpers
   end
 
   def mold_column_amount_for_bad_info(column, amount)
+    column = column.to_i
+    amount = amount.to_i
+
     if column < 0 || column > 6
       raise_illegal_move
       first_available_move
