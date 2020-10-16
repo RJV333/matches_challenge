@@ -2,7 +2,7 @@ require_relative 'Player'
 
 class IllegalPlayer < Player
 
-  attr_accessor :color, :opponent, :player_name
+  attr_accessor :player_name
 
   def initialize(player_name = 'Shady')
     @player_name = player_name

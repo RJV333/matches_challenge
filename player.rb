@@ -1,6 +1,6 @@
 class Player
 
-  attr_accessor :color, :opponent
+  attr_accessor :player_name
 
   def initialize(player_name)
     @player_name = player_name

@@ -2,11 +2,9 @@ require_relative 'Player'
 
 class RandomPlayer < Player
 
-  attr_accessor :color, :opponent, :player_name
+  attr_accessor :player_name
 
   def initialize(player_name = 'Rando')
-    @color = 'navy'
-    @opponent = nil
     @player_name = player_name
   end
 
